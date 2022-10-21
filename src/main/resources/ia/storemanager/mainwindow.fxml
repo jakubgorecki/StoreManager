@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="376.0" prefWidth="757.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ia.storemanager.MainWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="189.0" layoutY="187.0" stroke="TRANSPARENT" strokeType="INSIDE" width="757.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="29.0" layoutY="29.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="231.0" layoutX="418.0" layoutY="298.0" onMouseClicked="#switchToAprice1">
+         <image>
+            <Image url="@button_appropriate-price.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="231.0" layoutX="87.0" layoutY="223.0" onMouseClicked="#switchToProducts">
+         <image>
+            <Image url="@button_products.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="231.0" layoutX="418.0" layoutY="223.0" onMouseClicked="#switchToSalesHistory">
+         <image>
+            <Image url="@button_sales-history.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="231.0" layoutX="87.0" layoutY="298.0" onMouseClicked="#switchToTransaction">
+         <image>
+            <Image url="@button_new-transaction.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="305.0" prefHeight="187.0" prefWidth="453.0" stylesheets="@application.css">
+        <columns>
+          <TableColumn fx:id="issue" prefWidth="203.0" />
+          <TableColumn fx:id="name" minWidth="0.0" prefWidth="226.0" sortable="false" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="26.0" layoutX="307.0" stroke="WHITE" strokeType="INSIDE" width="450.0" />
+      <Label layoutX="481.0" layoutY="5.0" text="Notifications" textAlignment="CENTER" textFill="#2a9b47">
+         <font>
+            <Font name="Montserrat Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

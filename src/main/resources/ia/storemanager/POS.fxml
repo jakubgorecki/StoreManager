@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="700.0" prefWidth="1262.0" style="-fx-background-color: #FFFFFf;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ia.storemanager.POSController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="700.0" stroke="TRANSPARENT" strokeType="INSIDE" width="206.0" />
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="16.0" layoutY="615.0" onMouseClicked="#switchToMainWindow">
+         <image>
+            <Image url="@button_back.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="138.0" layoutY="52.0" stroke="TRANSPARENT" strokeType="INSIDE" width="217.0" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="41.0" layoutY="59.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="seven" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="927.0" layoutY="485.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Label alignment="CENTER" layoutX="931.0" layoutY="489.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="7" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="eight" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1005.0" layoutY="485.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Label alignment="CENTER" layoutX="1009.0" layoutY="489.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="8" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="nine" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1085.0" layoutY="485.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Label alignment="CENTER" layoutX="1089.0" layoutY="489.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="9" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="480.0" layoutX="930.0" layoutY="-7.0" smooth="false" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="332.0" />
+      <Rectangle fx:id="four" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="927.0" layoutY="536.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Rectangle fx:id="five" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1005.0" layoutY="536.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Rectangle fx:id="six" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1085.0" layoutY="536.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Label alignment="CENTER" layoutX="1089.0" layoutY="539.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="6" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1009.0" layoutY="539.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="5" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="931.0" layoutY="539.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="4" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="one" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="927.0" layoutY="586.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Rectangle fx:id="two" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1005.0" layoutY="586.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Rectangle fx:id="three" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1085.0" layoutY="586.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Label alignment="CENTER" layoutX="931.0" layoutY="590.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1009.0" layoutY="589.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="2" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1089.0" layoutY="589.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="64.0" text="3" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="zero" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="927.0" layoutY="640.0" stroke="TRANSPARENT" strokeType="INSIDE" width="153.0" />
+      <Label alignment="CENTER" layoutX="935.0" layoutY="643.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="139.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="enter" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="154.0" layoutX="1164.0" layoutY="536.0" stroke="TRANSPARENT" strokeType="INSIDE" width="87.0" />
+      <Rectangle fx:id="dot" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1085.0" layoutY="640.0" stroke="TRANSPARENT" strokeType="INSIDE" width="74.0" />
+      <Label alignment="CENTER" layoutX="1084.0" layoutY="643.0" onMouseClicked="#lblClicked" prefHeight="43.0" prefWidth="74.0" text="." textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="backspace" arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="49.0" layoutX="1164.0" layoutY="485.0" stroke="TRANSPARENT" strokeType="INSIDE" width="87.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1169.0" layoutY="543.0" onMouseClicked="#lblEnter" prefHeight="138.0" prefWidth="74.0" text="⏎" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1171.0" layoutY="487.0" onMouseClicked="#lblBackspace" prefHeight="43.0" prefWidth="74.0" text="⌫" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="100.0" prefHeight="43.0" prefWidth="139.0" text="SUBTOTAL" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="143.0" prefHeight="43.0" prefWidth="139.0" text="TAX" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltotal" layoutX="1110.0" layoutY="247.0" prefHeight="43.0" prefWidth="139.0" text="\$0.00" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="940.0" layoutY="247.0" prefHeight="43.0" prefWidth="108.0" text="TOTAL" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="184.0" prefHeight="43.0" prefWidth="139.0" text="DISCOUNTS" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" focusTraversable="false" layoutX="234.0" layoutY="13.0" prefHeight="675.0" prefWidth="672.0">
+         <columns>
+            <TableColumn fx:id="product" prefWidth="500.0" text="Product">
+               <columns>
+                  <TableColumn fx:id="name" prefWidth="119.0" text="Name" />
+                  <TableColumn fx:id="barcode" prefWidth="128.0" text="Barcode" />
+                  <TableColumn fx:id="price" prefWidth="128.0" text="Price" />
+                  <TableColumn fx:id="expdate" prefWidth="126.0" text="Expiration" />
+               </columns></TableColumn>
+            <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="171.0" text="Quantity" />
+         </columns>
+      </TableView>
+      <TextField fx:id="textfield" alignment="CENTER_RIGHT" layoutX="936.0" layoutY="422.0" onKeyTyped="#barcodeTyped" prefHeight="43.0" prefWidth="319.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></TextField>
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="16.0" layoutY="320.0" onMouseClicked="#addRemoveDiscount">
+         <image>
+            <Image url="@button_add-remove-discount.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="17.0" layoutY="374.0" onMouseClicked="#addBag">
+         <image>
+            <Image url="@button_add-a-bag.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="17.0" layoutY="269.0" onMouseClicked="#addMore">
+         <image>
+            <Image url="@button_add-more.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="17.0" layoutY="541.0" onMouseClicked="#removeEntry">
+         <image>
+            <Image url="@button_remove-entry.png" />
+         </image>
+      </ImageView>
+      <Line endX="231.0" layoutX="1036.0" layoutY="233.0" startX="-100.0" stroke="WHITE" />
+      <ImageView fitHeight="40.0" fitWidth="171.0" layoutX="1010.0" layoutY="327.0" onMouseClicked="#finish">
+         <image>
+            <Image url="@button_finish_transaction.png" />
+         </image>
+      </ImageView>
+      <Line endX="231.0" layoutX="1030.0" layoutY="407.0" startX="-100.0" stroke="WHITE" />
+      <Label fx:id="lblsubtotal" layoutX="1110.0" layoutY="100.0" prefHeight="43.0" prefWidth="139.0" text="\$0.00" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltax" layoutX="1110.0" layoutY="143.0" prefHeight="43.0" prefWidth="139.0" text="\$0.00" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldiscounts" layoutX="1110.0" layoutY="184.0" prefHeight="43.0" prefWidth="139.0" text="\$0.00" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="17.0" layoutY="453.0" onMouseClicked="#remove">
+         <image>
+            <Image url="@button_remove-one.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

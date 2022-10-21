@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="700.0" prefWidth="850.0" style="-fx-background-color: #FFFFFf;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ia.storemanager.SalesHistoryController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a9b47" height="700.0" stroke="TRANSPARENT" strokeType="INSIDE" width="206.0" />
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="16.0" layoutY="615.0" onMouseClicked="#switchToMainWindow">
+         <image>
+            <Image url="@button_back.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="138.0" layoutY="52.0" stroke="TRANSPARENT" strokeType="INSIDE" width="217.0" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="41.0" layoutY="59.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="234.0" layoutY="22.0" prefHeight="657.0" prefWidth="597.0">
+         <columns>
+            <TableColumn fx:id="product" prefWidth="482.0" text="Product">
+               <columns>
+                  <TableColumn fx:id="name" prefWidth="95.0" text="Name" />
+                  <TableColumn fx:id="barcode" prefWidth="135.0" text="Barcode" />
+                  <TableColumn fx:id="price" prefWidth="113.0" text="Price" />
+                  <TableColumn fx:id="date" prefWidth="143.0" text="Date Sold" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="quantity" minWidth="0.0" text="Quantity Sold" />
+         </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="223.0" text="Revenue in last week:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="week" layoutX="36.0" layoutY="256.0" prefHeight="23.0" prefWidth="125.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="306.0" text="Revenue in last month:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="month" layoutX="36.0" layoutY="339.0" prefHeight="23.0" prefWidth="125.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="18.0" layoutY="456.0" onMouseClicked="#weekly">
+         <image>
+            <Image url="@button_print-weekly-report.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="174.0" layoutX="18.0" layoutY="509.0" onMouseClicked="#monthly">
+         <image>
+            <Image url="@button_print-monthly-report.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

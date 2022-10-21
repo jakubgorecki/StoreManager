@@ -1,0 +1,20 @@
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell .text {
+       -fx-fill: black ;
+}
+
+.table-row-cell:up 
+{
+    -fx-background-color: #007054; 
+}
+
+.table-row-cell:down {
+    -fx-background-color: #A30029;
+}
+
+
+

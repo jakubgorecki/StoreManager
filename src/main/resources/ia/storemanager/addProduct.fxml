@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="335.0" prefWidth="487.0" style="-fx-background-color: #2a9b47#2a9b47;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ia.storemanager.AddProductController">
+   <children>
+      <Circle fill="WHITE" layoutX="-4.0" layoutY="-18.0" radius="122.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="14.0" text="Add a product" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="41.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textid" alignment="CENTER" layoutX="277.0" layoutY="80.0" prefHeight="32.0" prefWidth="132.0" promptText="Enter the name" />
+      <Label layoutX="168.0" layoutY="116.0" text="Price:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="78.0" text="ID:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priceid" alignment="CENTER" layoutX="277.0" layoutY="118.0" prefHeight="32.0" prefWidth="132.0" promptText="Enter a number" />
+      <Label layoutX="120.0" layoutY="152.0" text="Quantity:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantityid" alignment="CENTER" layoutX="277.0" layoutY="154.0" prefHeight="32.0" prefWidth="132.0" promptText="Enter a number" />
+      <Label layoutX="121.0" layoutY="188.0" text="Barcode:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="barcodeid" alignment="CENTER" layoutX="277.0" layoutY="190.0" prefHeight="32.0" prefWidth="132.0" promptText="Scan or Enter" />
+      <ImageView fitHeight="41.0" fitWidth="88.0" layoutX="373.0" layoutY="276.0" onMouseClicked="#switchAndSave">
+         <image>
+            <Image url="@button_finish.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="88.0" layoutX="24.0" layoutY="276.0" onMouseClicked="#switchToProducts">
+         <image>
+            <Image url="@button_backshort.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="112.0" layoutY="226.0" text="Exp. date:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="expdateid" alignment="CENTER" layoutX="277.0" layoutY="226.0" prefHeight="32.0" prefWidth="132.0" promptText="DD/MM/YYYY" />
+   </children>
+</AnchorPane>
