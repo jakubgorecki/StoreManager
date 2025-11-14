@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
 /**
+ * Test
  * Launches aprice2.fxml window.
  * Allows for entering both demand and supply curves datapoints data.
  * Allows for changing windows by buttons on the GUI.
